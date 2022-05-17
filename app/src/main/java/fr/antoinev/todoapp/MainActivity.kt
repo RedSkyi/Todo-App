@@ -41,7 +41,7 @@ fun TodoAppScreen() {
     val navController = rememberNavController()
 
     NavHost(navController = navController, startDestination = Routes.Home.route) {
-        composable(Routes.Home.route) {  }
+        composable(Routes.Home.route) { Home() }
         composable(Routes.CreateTodo.route) {  }
     }
 }
