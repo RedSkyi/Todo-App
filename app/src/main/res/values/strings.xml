@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Todo App</string>
+    <string name="app_name">TodoApp</string>
+    <string name="hi">Bonjour</string>
+    <string name="welcome_title">Bienvenue sur TodoApp</string>
 </resources>

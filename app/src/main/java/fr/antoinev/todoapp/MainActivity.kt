@@ -3,6 +3,7 @@ package fr.antoinev.todoapp
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.activity.viewModels
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
@@ -15,6 +16,7 @@ import androidx.navigation.compose.rememberNavController
 import fr.antoinev.todoapp.ui.theme.TodoAppTheme
 
 class MainActivity : ComponentActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -41,7 +43,7 @@ fun TodoAppScreen() {
     val navController = rememberNavController()
 
     NavHost(navController = navController, startDestination = Routes.Home.route) {
-        composable(Routes.Home.route) {  }
+        composable(Routes.Home.route) { Home() }
         composable(Routes.CreateTodo.route) {  }
     }
 }
